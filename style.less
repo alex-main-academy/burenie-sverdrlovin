@@ -1,0 +1,192 @@
+//compress:true
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background: url(./images/background__image.jpg);
+    background-repeat: no-repeat;
+    background-size: 101%;
+    opacity: 0.9;
+    padding: 5% 10%;
+    @media (max-width: 768px) {
+        background-size: 300%;
+        padding: 0 10%;
+        display: flex;
+        align-items: center;
+    } 
+    @media (max-width:550px) {
+        padding: 10%;
+    }
+
+    .header__title {
+        h1 {
+            font-size: 64px;
+            color: rgba(255, 255, 255, 0.445);
+            @media (max-width: 1165px) {
+                font-size: 48px;
+            }
+            @media (max-width: 888px) {
+                font-size: 38px;
+            }
+            @media (max-width: 768px) {
+                font-size: 32px;
+            }
+            @media (max-width: 415px) {
+                font-size: 28px;
+            }
+            @media (max-width: 367px) {
+                font-size: 25px;
+            }
+        }
+    }
+    .header__image {
+        display: none;
+        @media(max-width:768px) {
+            display: block;
+            img {
+                width: 80%;
+                @media (max-width: 508px) {
+                    width: 130%;
+                }
+                @media (max-width: 450px) {
+                    width: 150%;
+                }
+                @media (max-width: 319px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.section {
+    .section__info {
+        margin: 3% 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.644);
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+        
+        .info__text {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: 768px) {
+                width: 80%;
+            }
+            h2 {
+                @media (max-width: 2500px) {
+                    font-size: 35px;
+                }
+                @media (max-width: 1600px) {
+                    font-size: 24px;
+                }
+                @media (max-width:768px) {
+                    font-size: 20px;
+                }
+            }
+            ul {
+                margin: 20px 0 0 0;
+                list-style: none;
+    
+                li {
+                    margin: 15px 0 0 0;
+                    @media (max-width: 2500px) {
+                        font-size: 28px;
+                    }
+                    @media (max-width: 1600px) {
+                        font-size: 20px;
+                    }
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .info__image {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: rgba(0, 0, 0, 0.644);
+            width: 40%;
+            img {
+                width: 70%;
+            }
+            @media (max-width:768px) {
+                display: none;
+            }
+        }
+    }
+    .section__button {
+        margin: 3% 0 0 0;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 768px) {
+            margin: 15% 0 0 0;
+        }
+        a {
+            @media (max-width: 768px) {
+                width: 30%;
+            }
+            margin: 0 10px 0 0;
+            img {
+                width: 100%;
+                
+            }
+        }
+    }
+}
+.footer {
+    margin: 5% 0 0 0;
+    padding: 2% 10%;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.87);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 957px) {
+        flex-direction: column;
+        padding: 5% 10%;
+    }
+
+
+    h3 {
+        font-size: 32px;
+        margin: 0 20px 0 0;
+        @media (max-width: 1130px) {
+            font-size: 24px;
+        }
+        @media (max-width: 768px) {
+            font-size: 20px;
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+    }
+    p {
+        margin: 5px 0 0 0;
+        a {
+            text-decoration: none;
+            color: blue;
+            font-size: 20px;
+            @media (max-width: 1020px) {
+                font-size: 15px;
+            }
+            @media (max-width: 565px) {
+                display: block;
+            }
+
+        }
+        @media (max-width: 768px) {
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}
